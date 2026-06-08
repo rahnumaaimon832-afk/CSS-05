@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap')
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+}
+.navbar-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 24px;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-img {
+    height: 24px;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #263238;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px; 
+}
+.nav-links a {
+    text-decoration: none;
+    color: #18191F;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+nav-links a:hover {
+    color: #4CAF4F;
+}
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-signup {
+    text-decoration: none;
+    color: #4CAF4F; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+.btn-signup:hover {
+    opacity: 0.8;
+}
+.btn-login {
+    text-decoration: none;
+    background-color: #4CAF4F; 
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 6px; 
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #3B8E3E; 
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 30px 0;
+    text-transform: capitalize;
+    color: var(--brand-primary);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #18191f;
+    position: relative;
+}
+nav ul li a::after{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--brand-primary);
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+
+}
+nav ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+}
+nav ul li a:hover{
+    color: var(--brand-primary);
+    transform: scale(1.1);
